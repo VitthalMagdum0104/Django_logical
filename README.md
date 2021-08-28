@@ -21,12 +21,7 @@ At a High level, this Django application will perform different HTTP requests to
 3. **url(r'^main/', views.main, name='main')**
 4. In point 2, "main" is the name of this URL
 5. **URL namespaces** -> URL namespaces allow you to uniquely reverse named URL patterns even if different applications use the same URL names. 
-At Line 21 in first_assignment/urls.py, path('', include(('simpleapp.urls', 'simpleapp'),namespace='simpleapp') ), **namespace='simpleapp'** is set
-Remember, Both Name and Namespace are important for the assignment
-6. For this assignment's test cases we have used some predefined names and namespace
-7. Those names are defined below in the problem statement describes as "Django Url name"
-8. Please make sure you use those names in Django URLs or else your assignment's test will fail
-9. Summary: Namespace is "simpleapp" set in first_assignment/urls.py file and name is to be set for each URL in simpleapp/urls which is stated in the problem statement 
+in Django_logical/urls.py, path('', include(('simpleapp.urls', 'simpleapp'),namespace='simpleapp') ), **namespace='simpleapp'**
 
 ### API
 
@@ -48,9 +43,8 @@ Body: {'id':'10'}
 Once you create APIs, you have to test it
 The recommended way to do API testing is through Postman or curl
 We would be Using Postman to test these Apis
-Postman is a scalable API testing tool 
-Please follow this tutorial if you are new to Postman https://www.guru99.com/postman-tutorial.html OR https://www.youtube.com/watch?v=UTxmq4nmJ74
-Postman Input/output Screenshots are attached after each use case below
+Postman is a scalable API testing tool.
+
 
 
 
